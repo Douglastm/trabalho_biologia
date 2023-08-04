@@ -4,7 +4,12 @@
 
     --primary-color: #567ebb;
     --secondary-color: #1f1f20;
+    --background-color: #e6dcdc;
     --white: #fff;
+}
+
+body {
+    background: var(--background-color);
 }
 
 a {
