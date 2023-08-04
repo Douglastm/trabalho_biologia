@@ -6,10 +6,17 @@
     --secondary-color: #1f1f20;
     --background-color: #e6dcdc;
     --white: #fff;
+    --header-height: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
     background: var(--background-color);
+    padding-top: var(--header-height);
 }
 
 a {

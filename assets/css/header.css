@@ -1,15 +1,22 @@
 .header {
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    box-sizing: border-box;
+    
     background: var(--primary-color);
     padding-inline: 16px;
 }
 
 .header__nav {
     max-width: 1280px;
-    height: 70px;
+    padding: 0 1rem;
+    height: var(--header-height);
     margin-inline: auto;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
