@@ -1,6 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+
+    --primary-color: #567ebb;
+    --secondary-color: #1f1f20;
+    --white: #fff;
 }
 
 a {

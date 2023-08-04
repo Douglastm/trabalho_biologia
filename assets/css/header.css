@@ -1,5 +1,5 @@
 .header {
-    background: #567ebb;
+    background: var(--primary-color);
     padding-inline: 16px;
 }
 
@@ -25,15 +25,21 @@
 
 .header__nav-list a {
     font-size: 18px;
-    color: #fff;
+    color: var(--white);
     padding-block: 16px;
+
+    transition: 150ms;
+}
+
+.header__nav-list a:hover {
+    color: var(--secondary-color);
 }
 
 .header__hamburger {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid var(--white);
     cursor: pointer;
 }
 
@@ -43,7 +49,7 @@
     display: block;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: var(--white);
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
