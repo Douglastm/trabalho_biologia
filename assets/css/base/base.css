@@ -16,3 +16,13 @@ a {
     font-family: sans-serif;
     text-decoration: none;
 }
+
+.container {
+    padding: 2rem 15rem;
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 2rem 5rem;
+    }
+}

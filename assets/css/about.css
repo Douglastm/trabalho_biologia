@@ -1,0 +1,8 @@
+.about {
+    
+}
+
+.about__title {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
