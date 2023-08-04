@@ -1,13 +1,8 @@
 .about {
-    height: 100vh;
-    background: greenyellow;
-
     scroll-margin-top: var(--header-height);
 }
 
 .about2 {
-    height: 100vh;
-    background: slateblue;
     scroll-margin-top: var(--header-height);
 }
 
