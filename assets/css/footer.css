@@ -1,0 +1,28 @@
+.footer {
+    padding: 2rem 1rem;
+    background: #1f1f20;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.footer__nomes-titulo {
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.footer__nomes-alunos {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.footer__nomes-alunos li {
+    transition: 150ms;
+
+}
+
+.footer__nomes-alunos li:hover {
+    color: aquamarine;
+}

@@ -1,0 +1,119 @@
+.header {
+    background: #567ebb;
+    padding-inline: 16px;
+}
+
+.header__nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 48px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.header__nav-list a {
+    font-size: 18px;
+    color: #fff;
+    padding-block: 16px;
+}
+
+.header__hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.header__hamburger::after,
+.header__hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .header__hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .header__nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #2b4c7e;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        pointer-events: none;
+    }
+
+    .header__nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .header__nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .header__nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .header__nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    /* Estilos ativos */
+
+    .header__nav.active .header__nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .header__nav.active .header__nav-list a {
+        opacity: 1;
+    }
+
+    .header__nav.active .header__hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .header__nav.active .header__hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .header__nav.active .header__hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
