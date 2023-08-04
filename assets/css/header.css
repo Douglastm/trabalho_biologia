@@ -16,12 +16,13 @@
     margin-inline: auto;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header__logo {
-    font-size: 48px;
+    width: 10rem;
+    display: flex;
 }
 
 .header__nav-list {
