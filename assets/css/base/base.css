@@ -26,12 +26,19 @@ a {
     text-decoration: none;
 }
 
+
 .container {
-    padding: 2rem 15rem;
+    padding: 2rem 12rem;
+    scroll-margin-top: var(--header-height);
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    background: center / cover no-repeat url("./bg.jpg");
 }
 
 @media (max-width: 750px) {
     .container {
-        padding: 2rem 5rem;
+        padding: 2rem 3rem;
     }
 }

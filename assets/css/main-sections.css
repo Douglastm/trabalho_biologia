@@ -1,0 +1,38 @@
+.main-sections {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.main-sections__title {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-sections__paragraph {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-sections__list-style {
+    list-style: disc;
+    margin: .7rem 0 0 1.2rem;
+}
+
+.main-sections__img {
+    width: 40rem;
+    display: inline-block;
+    border-radius: 10px;
+    margin: .8rem 0;
+    align-self: center;
+}
+
+@media (max-width: 750px) {
+    .main-sections__img {
+        width: 25rem;
+    }
+}
