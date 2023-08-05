@@ -104,6 +104,14 @@
         transition: 0.5s 0.6s;
     }
 
+    .header__nav-list li:nth-child(4) a {
+        transition: 0.5s 0.8s;
+    }
+
+    .header__nav-list li:nth-child(5) a {
+        transition: 0.5s 1s;
+    }
+
     /* Estilos ativos */
 
     .header__nav.active .header__nav-list {

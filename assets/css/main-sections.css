@@ -6,11 +6,14 @@
 }
 
 .main-sections__title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: .5rem;
 }
 
 .main-sections__paragraph {
@@ -25,10 +28,14 @@
 
 .main-sections__img {
     width: 40rem;
+    max-width: 90vw;
+
     display: inline-block;
+    box-sizing: border-box;
+    align-self: center;
+
     border-radius: 10px;
     margin: .8rem 0;
-    align-self: center;
 }
 
 @media (max-width: 750px) {
