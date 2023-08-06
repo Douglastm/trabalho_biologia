@@ -63,6 +63,7 @@
     background: var(--white);
     margin-top: 5px;
     position: relative;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -79,6 +80,7 @@
         width: 100vw;
         height: 100vh;
         background: #2b4c7e;
+        -webkit-clip-path: circle(100px at 90% -15%);
         clip-path: circle(100px at 90% -15%);
         transition: 1s ease-out;
 
@@ -97,27 +99,33 @@
 
     .header__nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
+        -webkit-transition: 0.5s 0.2s;
     }
 
     .header__nav-list li:nth-child(2) a {
         transition: 0.5s 0.4s;
+        -webkit-transition: 0.5s 0.4s;
     }
 
     .header__nav-list li:nth-child(3) a {
         transition: 0.5s 0.6s;
+        -webkit-transition: 0.5s 0.6s;
     }
 
     .header__nav-list li:nth-child(4) a {
         transition: 0.5s 0.8s;
+        -webkirt-transition: 0.5s 0.8s;
     }
 
     .header__nav-list li:nth-child(5) a {
         transition: 0.5s 1s;
+        -webkit-transition: 0.5s 1s;
     }
 
     /* Estilos ativos */
 
     .header__nav.active .header__nav-list {
+        -webkit-clip-path: circle(1500px at 90% -15%);
         clip-path: circle(1500px at 90% -15%);
         pointer-events: all;
     }
@@ -135,10 +143,12 @@
 
     .header__nav.active .header__hamburger::before {
         transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
     }
 
     .header__nav.active .header__hamburger::after {
         transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
         top: -7px;
     }
 }
