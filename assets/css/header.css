@@ -1,4 +1,5 @@
 .header {
+    z-index: 1;
     position: fixed;
     top: 0;
 
@@ -7,6 +8,8 @@
     
     background: var(--primary-color);
     padding-inline: 16px;
+
+
 }
 
 .header__nav {
